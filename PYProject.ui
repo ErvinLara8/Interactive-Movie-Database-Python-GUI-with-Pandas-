@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1066</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Tittle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IMBD Data Base Interactive GUI</string>
+    </property>
+   </widget>
+   <widget class="MplotWidget" name="MplotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>49</y>
+      <width>731</width>
+      <height>651</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>270</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="22" column="0">
+      <widget class="QLabel" name="ma_min_label">
+       <property name="text">
+        <string>Max Rating:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="x_axis_label">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Movie category</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="vertical_radioBtn">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Vertical</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="metascore_label">
+       <property name="text">
+        <string>Metascore</string>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="1">
+      <widget class="QPushButton" name="max_min_btn">
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="runtime_label">
+       <property name="text">
+        <string>Runtime: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="1">
+      <widget class="QPushButton" name="srch_rank_btn">
+       <property name="text">
+        <string>Search Rank</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="srch_actor_label">
+       <property name="text">
+        <string>Search by Actors</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLineEdit" name="director_searchbox"/>
+     </item>
+     <item row="16" column="1">
+      <widget class="QPushButton" name="search_director_btn">
+       <property name="text">
+        <string>Search Director</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="srch_Director_label">
+       <property name="text">
+        <string>Search by Director</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="horizontal_radioBtn">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Horizontal</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0">
+      <widget class="QLineEdit" name="actor_searchbox"/>
+     </item>
+     <item row="20" column="0">
+      <widget class="QLineEdit" name="rank_searchbox"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="revenu_Label">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Revenue: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QSlider" name="metascore_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="0">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="0">
+      <widget class="QComboBox" name="y_axis_comboBox">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Rating</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Meta Score</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Run Time</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QSlider" name="run_time_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QSlider" name="revenueSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="0">
+      <widget class="QComboBox" name="x_axis_comboBox">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Genre</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Year</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tittle</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="21" column="0">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="23" column="0">
+      <widget class="QComboBox" name="max_min_combobox">
+       <item>
+        <property name="text">
+         <string>Max</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Min</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Average</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="y_axis_label">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Movie Value</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <widget class="QPushButton" name="search_actor_btn">
+       <property name="text">
+        <string>Search Actor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="srch_rank_label">
+       <property name="text">
+        <string>Search by Top Rank</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1066</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplotWidget</class>
+   <extends>QWidget</extends>
+   <header>mplotwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
